@@ -1,2 +1,0 @@
-# django
-Django file build
