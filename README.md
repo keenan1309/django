@@ -2,7 +2,12 @@ Django App
 
 A IDE and the docker app is required to run this.
 
-This app can be run throght any IDE
+This app can be run through any IDE
+
+A login page should be presented upon entering.
+
+Register create a username and login
+
 
 To run the Django development server, type the command python manage.py runserver in your terminal of the Django project and hit enter. If everything is okay with your project, 
 Django will start running the server at localhost port 8000 (127.0.0.1:8000) and then you have to navigate to that link in your browser. While the server is running, 
