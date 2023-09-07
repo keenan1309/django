@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>newsweb package &mdash; newsapp 0.0.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=688bb677"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            newsapp
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">newsweb package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-newsweb.admin">newsweb.admin module</a></li>
+<li><a class="reference internal" href="#module-newsweb.apps">newsweb.apps module</a><ul>
+<li><a class="reference internal" href="#newsweb.apps.NewswebConfig"><code class="docutils literal notranslate"><span class="pre">NewswebConfig</span></code></a><ul>
+<li><a class="reference internal" href="#newsweb.apps.NewswebConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">NewswebConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.apps.NewswebConfig.name"><code class="docutils literal notranslate"><span class="pre">NewswebConfig.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-newsweb.models">newsweb.models module</a><ul>
+<li><a class="reference internal" href="#newsweb.models.Post"><code class="docutils literal notranslate"><span class="pre">Post</span></code></a><ul>
+<li><a class="reference internal" href="#newsweb.models.Post.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Post.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Post.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.body"><code class="docutils literal notranslate"><span class="pre">Post.body</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.date"><code class="docutils literal notranslate"><span class="pre">Post.date</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.get_next_by_date"><code class="docutils literal notranslate"><span class="pre">Post.get_next_by_date()</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.get_previous_by_date"><code class="docutils literal notranslate"><span class="pre">Post.get_previous_by_date()</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.id"><code class="docutils literal notranslate"><span class="pre">Post.id</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.objects"><code class="docutils literal notranslate"><span class="pre">Post.objects</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.signature"><code class="docutils literal notranslate"><span class="pre">Post.signature</span></code></a></li>
+<li><a class="reference internal" href="#newsweb.models.Post.title"><code class="docutils literal notranslate"><span class="pre">Post.title</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-newsweb.tests">newsweb.tests module</a></li>
+<li><a class="reference internal" href="#module-newsweb.urls">newsweb.urls module</a></li>
+<li><a class="reference internal" href="#module-newsweb.views">newsweb.views module</a><ul>
+<li><a class="reference internal" href="#newsweb.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-newsweb">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">newsapp</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">newsweb package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/newsweb.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="newsweb-package">
+<h1>newsweb package<a class="headerlink" href="#newsweb-package" title="Link to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="newsweb.migrations.html">newsweb.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="newsweb.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newsweb.migrations.html#module-newsweb.migrations.0001_initial">newsweb.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="newsweb.migrations.html#newsweb.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="newsweb.migrations.html#newsweb.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="newsweb.migrations.html#newsweb.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="newsweb.migrations.html#newsweb.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="newsweb.migrations.html#module-newsweb.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-newsweb.admin">
+<span id="newsweb-admin-module"></span><h2>newsweb.admin module<a class="headerlink" href="#module-newsweb.admin" title="Link to this heading"></a></h2>
+</section>
+<section id="module-newsweb.apps">
+<span id="newsweb-apps-module"></span><h2>newsweb.apps module<a class="headerlink" href="#module-newsweb.apps" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="newsweb.apps.NewswebConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">newsweb.apps.</span></span><span class="sig-name descname"><span class="pre">NewswebConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newsweb/apps.html#NewswebConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newsweb.apps.NewswebConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="newsweb.apps.NewswebConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#newsweb.apps.NewswebConfig.default_auto_field" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="newsweb.apps.NewswebConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'newsweb'</span></em><a class="headerlink" href="#newsweb.apps.NewswebConfig.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-newsweb.models">
+<span id="newsweb-models-module"></span><h2>newsweb.models module<a class="headerlink" href="#module-newsweb.models" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="newsweb.models.Post">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">newsweb.models.</span></span><span class="sig-name descname"><span class="pre">Post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newsweb/models.html#Post"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newsweb.models.Post" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="newsweb.models.Post.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#newsweb.models.Post.DoesNotExist" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="newsweb.models.Post.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#newsweb.models.Post.MultipleObjectsReturned" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="newsweb.models.Post.body">
+<span class="sig-name descname"><span class="pre">body</span></span><a class="headerlink" href="#newsweb.models.Post.body" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="newsweb.models.Post.date">
+<span class="sig-name descname"><span class="pre">date</span></span><a class="headerlink" href="#newsweb.models.Post.date" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="newsweb.models.Post.get_next_by_date">
+<span class="sig-name descname"><span class="pre">get_next_by_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#newsweb.models.Post.get_next_by_date" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="newsweb.models.Post.get_previous_by_date">
+<span class="sig-name descname"><span class="pre">get_previous_by_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#newsweb.models.Post.get_previous_by_date" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="newsweb.models.Post.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#newsweb.models.Post.id" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="newsweb.models.Post.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#newsweb.models.Post.objects" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="newsweb.models.Post.signature">
+<span class="sig-name descname"><span class="pre">signature</span></span><a class="headerlink" href="#newsweb.models.Post.signature" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="newsweb.models.Post.title">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#newsweb.models.Post.title" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-newsweb.tests">
+<span id="newsweb-tests-module"></span><h2>newsweb.tests module<a class="headerlink" href="#module-newsweb.tests" title="Link to this heading"></a></h2>
+</section>
+<section id="module-newsweb.urls">
+<span id="newsweb-urls-module"></span><h2>newsweb.urls module<a class="headerlink" href="#module-newsweb.urls" title="Link to this heading"></a></h2>
+</section>
+<section id="module-newsweb.views">
+<span id="newsweb-views-module"></span><h2>newsweb.views module<a class="headerlink" href="#module-newsweb.views" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="newsweb.views.index">
+<span class="sig-prename descclassname"><span class="pre">newsweb.views.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newsweb/views.html#index"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newsweb.views.index" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-newsweb">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-newsweb" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, keenan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
