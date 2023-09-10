@@ -1,0 +1,41 @@
+{% comment %} HTML template to display all detail showing choices etc and CSS stying added {% endcomment %}
+{% load static %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<header>
+    <div class = "banner">
+        <div class = "row">
+        <div class = "col-md-2">
+        <img src = {% static 'fakenews.jpg'%} width = 200px>
+    </div>
+    <div class="col-md-8">
+        <h1>THE FAKE NEWS ERA !! GET YOUR PROPOGANDA HERE</h1>
+        </div>
+    <div class="col-md-2">
+<!-- Created the button section for log in and to view the cart -->
+        <br></br>
+        <button type="button" class="btn btn-primary">TIPLINE</button>
+        <button type="button" class="btn btn-primary">DONATE</button>
+        <!-- This is col 9-12 (login/register button) -->
+    </header>
+<div class = 'newsarticle'>
+    <H2>ENJOY THE READ ! WE HOPE IT ENTERTAINS AND INFROMS<H2>
+    <br></br>
+    <h3> {{question.question_text}}</h3>
+
+{% if error_message %}
+
+<p><strong>{{error_message}}</strong></p>
+{% endif %}
+<div class= 'newsarticle1'>
+<form action="{% url 'polls:detail' question.id %}" method="post">
+    <P> {{question.question_body}}</P>
+</div>
+</label>
+</div>
+</div>
+<br><br/>
+</label>
+<br><br/>

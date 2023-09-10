@@ -1,0 +1,34 @@
+{% load static %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% comment %} Template to display login page {% endcomment %}
+<header>
+    <div class = "newsarticle">
+        <div class = "row">
+        <div class = "col-md-2">
+        <img src = {% static 'fakenews.jpg'%} width = 100px>
+    </div>
+    <div class="col-md-8">
+        <h1>THE FAKE NEWS ERA !! GET YOUR PROPOGANDA HERE</h1>
+        <h1>LOGIN OR REGISTER TO CHECK OUT OUR ARTICLES</h1>
+        </div>
+    <div class="col-md-2">
+<!-- Created the button section for log in and to view the cart -->
+        <br></br>
+        <!-- This is col 9-12 (login/register button) -->
+    </header>
+    <br></br>
+<form action="{% url 'user_auth:authenticate_user' %}" method="post">
+{% csrf_token %}
+<label>Username</label>
+<input type="text" name="username" placeholder="User" required>
+<br/><br/>
+<label>Password</label>
+<input type="password" name="password" required>
+<br/><br/>
+<input type="submit" value="Login" />
+</form>
+<a href="http://127.0.0.1:8000/signup">
+    <button> Register</button>
+</a>
