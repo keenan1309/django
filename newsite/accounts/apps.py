@@ -5,7 +5,7 @@ class AccountsConfig(AppConfig):
     """AppConfig
 
     Args:
-        AppConfig (_type_): _description_
+        configure accounts app
     """
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'accounts'
