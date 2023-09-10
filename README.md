@@ -16,7 +16,7 @@ it allows you to change the port and IP address of the server, or prevent the se
 
 Use pip install -r requirements.txt to install requirements lised in requirement.txt.
 
-Use docker desktop or docker play ground to run dockerfile or image, in docker playground run CMD 
+Use docker desktop or docker play ground to run dockerfile or image, in your PC in the  CMD run the below commands
 
 to build webpage:
 docker build -t django . 
@@ -24,9 +24,9 @@ docker build -t django .
 tag = latest
 
 to pull the webpage:
-docker pull keenanhansrajh/django:tag
+docker pull keenanhansrajh/django:latest
 
 to run on desktop:
-docker run -d -p 80:80 keenanhanrajh/django
+docker run -d -p 8000:8000 django
 
 
