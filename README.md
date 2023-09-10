@@ -18,6 +18,14 @@ Use pip install -r requirements.txt to install requirements lised in requirement
 
 Use docker desktop or docker play ground to run dockerfile or image, in docker playground run CMD 
 
+to build webpage:
+docker build -t django . 
+
+tag = latest
+
+to pull the webpage:
+docker pull keenanhansrajh/django:tag
+
 to run on desktop:
 docker run -d -p 80:80 keenanhanrajh/django
 
