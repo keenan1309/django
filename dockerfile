@@ -1,3 +1,5 @@
-FROM nginx
-COPY . /usr/share/nginx/html
+FROM pypy:latest
+WORKDIR /app
+COPY . /app
+CMD ["python" , "manage.py" , "runserver", "0.0.0.0:8000"]
 
