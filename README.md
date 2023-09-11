@@ -18,6 +18,9 @@ Use pip install -r requirements.txt to install requirements lised in requirement
 
 Use docker desktop or docker play ground to run dockerfile or image, in your PC in the  CMD run the below commands
 
+To Clone
+git clone https://github.com/keenan1309/django
+
 to build webpage:
 docker build -t django . 
 
