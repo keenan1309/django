@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>polls package &mdash; newsite 0.0.1 documentation</title>
+  <title>polls package &mdash; django-app 00.00.01 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -13,14 +13,12 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="_static/documentation_options.js?v=d7bb8d4d"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="polls.migrations package" href="polls.migrations.html" />
-    <link rel="prev" title="newsite package" href="newsite.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -32,7 +30,7 @@
           
           
           <a href="index.html" class="icon icon-home">
-            newsite
+            django-app
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -42,49 +40,54 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="modules.html">newsite</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="accounts.html">accounts package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="newsite.html">newsite package</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">polls package</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="polls.migrations.html">polls.migrations package</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-polls.admin">polls.admin module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-polls.apps">polls.apps module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#polls.apps.PollsConfig"><code class="docutils literal notranslate"><span class="pre">PollsConfig</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#module-polls.models">polls.models module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#polls.models.Question"><code class="docutils literal notranslate"><span class="pre">Question</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#module-polls.tests">polls.tests module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-polls.urls">polls.urls module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-polls.views">polls.views module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#polls.views.detail"><code class="docutils literal notranslate"><span class="pre">detail()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#polls.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#module-polls">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="user_auth.html">user_auth package</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">polls package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-polls.admin">polls.admin module</a></li>
+<li><a class="reference internal" href="#module-polls.apps">polls.apps module</a><ul>
+<li><a class="reference internal" href="#polls.apps.PollsConfig"><code class="docutils literal notranslate"><span class="pre">PollsConfig</span></code></a><ul>
+<li><a class="reference internal" href="#polls.apps.PollsConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">PollsConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#polls.apps.PollsConfig.name"><code class="docutils literal notranslate"><span class="pre">PollsConfig.name</span></code></a></li>
 </ul>
 </li>
 </ul>
-
+</li>
+<li><a class="reference internal" href="#module-polls.models">polls.models module</a><ul>
+<li><a class="reference internal" href="#polls.models.Question"><code class="docutils literal notranslate"><span class="pre">Question</span></code></a><ul>
+<li><a class="reference internal" href="#polls.models.Question.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Question.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#polls.models.Question.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Question.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#polls.models.Question.get_next_by_pub_date"><code class="docutils literal notranslate"><span class="pre">Question.get_next_by_pub_date()</span></code></a></li>
+<li><a class="reference internal" href="#polls.models.Question.get_previous_by_pub_date"><code class="docutils literal notranslate"><span class="pre">Question.get_previous_by_pub_date()</span></code></a></li>
+<li><a class="reference internal" href="#polls.models.Question.id"><code class="docutils literal notranslate"><span class="pre">Question.id</span></code></a></li>
+<li><a class="reference internal" href="#polls.models.Question.objects"><code class="docutils literal notranslate"><span class="pre">Question.objects</span></code></a></li>
+<li><a class="reference internal" href="#polls.models.Question.pub_date"><code class="docutils literal notranslate"><span class="pre">Question.pub_date</span></code></a></li>
+<li><a class="reference internal" href="#polls.models.Question.question_body"><code class="docutils literal notranslate"><span class="pre">Question.question_body</span></code></a></li>
+<li><a class="reference internal" href="#polls.models.Question.question_text"><code class="docutils literal notranslate"><span class="pre">Question.question_text</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-polls.tests">polls.tests module</a></li>
+<li><a class="reference internal" href="#module-polls.urls">polls.urls module</a></li>
+<li><a class="reference internal" href="#module-polls.views">polls.views module</a><ul>
+<li><a class="reference internal" href="#polls.views.detail"><code class="docutils literal notranslate"><span class="pre">detail()</span></code></a></li>
+<li><a class="reference internal" href="#polls.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-polls">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
         </div>
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">newsite</a>
+          <a href="index.html">django-app</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -92,7 +95,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="modules.html">newsite</a></li>
       <li class="breadcrumb-item active">polls package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/polls.rst.txt" rel="nofollow"> View page source</a>
@@ -309,10 +311,7 @@ object the first time, the query is executed.</p>
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="newsite.html" class="btn btn-neutral float-left" title="newsite package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="polls.migrations.html" class="btn btn-neutral float-right" title="polls.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
