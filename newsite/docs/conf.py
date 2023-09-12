@@ -4,6 +4,7 @@ import django
 sys.path.insert(0, os.path.abspath('..'))
 os.environ['DJANGO_SETTINGS_MODULE'] = 'newsite.settings'
 django.setup()
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -21,8 +22,13 @@ release = '00.00.01'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['sphinx.ext.autodoc',
+<<<<<<< HEAD
               'sphinx.ext.viewcode',
               'sphinx.ext.napoleon']
+=======
+'sphinx.ext.viewcode',
+'sphinx.ext.napoleon']
+>>>>>>> a10d0deae1b8aade17ad8ce7e57faee67991e512
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
