@@ -21,15 +21,15 @@ To run locally
 To Clone
 git clone https://github.com/keenan1309/django2
 to build webpage:
-docker build -t django2 . 
+docker build -t keenanhansrajh/django2 . 
 to run on desktop:
-docker run -d -p 80:80 django2
+docker run -d -p 8000:8000 keenanhansrajh/django2
 tag = latest
 
 To run online:
 to pull the webpage:
 docker pull keenanhansrajh/django2:latest
 to run:
-docker run -d -p 80:80 django2
+docker run -d -p 8000:8000 keenanhansrajh/django2
 
 
